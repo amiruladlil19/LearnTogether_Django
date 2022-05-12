@@ -1,5 +1,5 @@
 <a href="/">
-    <h1>LOGO</h1>
+    <h1>We have no logo yet lol</h1>
 </a>
 
 
@@ -9,6 +9,7 @@
 </form>
 
 {% if request.user.is_authenticated %}
+<p>Hello {{request.user}}</p>
 <a href="{% url 'logout'%}">Logout</a>
 {% else %}
 
